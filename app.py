@@ -23,6 +23,7 @@ external_stylesheets = [
     },
 ]
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
+server = app.server
 
 app.title = "Dash"
 
@@ -358,6 +359,6 @@ def name_to_figure(fig_name):
     return dcc.Graph(figure=figure)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app.run_server("0.0.0.0", debug=False, port=int(
         os.environ.get('PORT', 8000)))
