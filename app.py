@@ -99,7 +99,7 @@ def filterDate(state, outcome, startDate, endDate):
     global df, df_dt_grouped
 
     df = pd.read_excel(
-        "Homework 6/dashboard.xlsx",
+        "assets/dashboard.xlsx",
     )
 
     if state == "All" and outcome == "All":
