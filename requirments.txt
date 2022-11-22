@@ -1,0 +1,15 @@
+chart-studio==1.1.0
+dash==2.7.0
+dash-auth==1.4.1
+dash-core-components==2.0.0
+dash-html-components==2.0.0
+dash-table==5.0.0
+Flask==2.2.2
+Flask-Compress==1.13
+Flask-SeaSurf==1.1.1
+fonttools==4.38.0
+Jinja2==3.1.2
+matplotlib==3.6.2
+numpy==1.23.5
+pandas==1.5.1
+plotly==5.11.0
