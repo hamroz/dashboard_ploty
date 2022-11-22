@@ -1,11 +1,12 @@
 """
 
-Created on Thu Nov 9 05:31:59 PM 2022
+Created on Thu Nov 19 05:31:59 PM 2022
 
 @author: Hamroz Gavharov
 
 """
 
+import os
 import dash
 from dash import dcc
 from dash import html
@@ -357,5 +358,6 @@ def name_to_figure(fig_name):
     return dcc.Graph(figure=figure)
 
 
-if __name__ == "__main__":
-    app.run_server(debug=True)
+if __name__ == '_main_':
+    app.run_server("0.0.0.0", debug=False, port=int(
+        os.environ.get('PORT', 8000)))
