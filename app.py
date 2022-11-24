@@ -28,7 +28,7 @@ server = app.server
 app.title = "Dash"
 
 df = pd.read_excel(
-    "Homework 6/homework_task/assets/dashboard.xlsx",
+    "assets/dashboard.xlsx",
 )
 
 df_dt_grouped = df.groupby("Date")["Outcome"].count()
@@ -220,7 +220,7 @@ def filterDate(state, outcome, startDate, endDate):
     global df, df_dt_grouped
 
     df = pd.read_excel(
-        "Homework 6/homework_task/assets/dashboard.xlsx",
+        "assets/dashboard.xlsx",
     )
 
     if state == "All" and outcome == "All":
